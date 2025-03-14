@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="section-container">
+      <div class="header-container">
+        <h1 class="color-white">
+          ROCK <br />
+          PAPER <br />
+          SCISSORS <br />
+          LIZARD <br />
+          SPOCK
+        </h1>
+        <div class="header-score">
+          <p class="fw-600 color-score-text">SCORE</p>
+          <p id="score" class="fw-700 color-dark-text">0</p>
+        </div>
+      </div>
+    </header>
+    <!-- MAIN -->
+    <main>
+      <section class="section-container">
+        <div id="playableSection" class="playable-section">
+          <div class="spock-container">
+            <div id="spockButton" class="playable-icons-style">
+              <img src="./assets/icon-spock.svg" />
+            </div>
+          </div>
+          <div class="scissors-container">
+            <div id="scissorsButton" class="playable-icons-style">
+              <img src="./assets/icon-scissors.svg" />
+            </div>
+          </div>
+          <div class="paper-container">
+            <div id="paperButton" class="playable-icons-style">
+              <img src="./assets/icon-paper.svg" />
+            </div>
+          </div>
+          <div class="rock-container">
+            <div id="rockButton" class="playable-icons-style">
+              <img src="./assets/icon-rock.svg" />
+            </div>
+          </div>
+          <div class="lizard-container">
+            <div id="lizardButton" class="playable-icons-style">
+              <img src="./assets/icon-lizard.svg" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- RULES -->
+      <section class="section-container">
+        <div id="rulesContainer" class="rules-container">
+          <h2 class="fw-700 color-dark-text">RULES</h2>
+          <img src="./assets/image-rules-bonus.svg" />
+          <button id="closeRulesContainer">
+            <img src="./assets/icon-close.svg" />
+          </button>
+        </div>
+      </section>
+      <!-- CHOOSE SIGN -->
+      <section class="section-container">
+        <div id="signsContainer" class="signs-container">
+          <div class="friendly-section">
+            <div id="friendlyContainer" class="friendly-container">
+              <div id="fIconStyle" class="friendly-enemy-icons-style">
+                <img id="friendlyImage" src="" />
+              </div>
+            </div>
+            <p class="fw-600 color-white">YOU PICKED</p>
+          </div>
+          <div class="enemy-section">
+            <div id="enemyContainer" class="enemy-container">
+              <div id="eIconStyle" class="friendly-enemy-icons-style">
+                <img id="enemyImage" src="" />
+              </div>
+            </div>
+            <p class="fw-600 color-white">THE HOUSE PICKED</p>
+          </div>
+          <div class="win-lose-container">
+            <p id="messageWinLose" class="fw-700 color-white">Waiting...</p>
+            <button
+              id="playAgain"
+              class="play-again-button fw-600 color-dark-text"
+            >
+              PLAY AGAIN
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="section-container">
+      <button id="rulesButton" class="fw-600 color-white">RULES</button>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
